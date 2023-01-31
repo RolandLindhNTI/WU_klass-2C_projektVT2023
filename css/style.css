@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+
+}
+
+
+/* Index */
+h1 {
+    font-family: 'Russo One', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+}
+
+p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    background-color: black;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    padding: 500px;
+}
+
+/* End of index */
