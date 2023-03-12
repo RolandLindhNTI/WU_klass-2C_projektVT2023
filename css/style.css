@@ -40,7 +40,7 @@ p {
 
 
 #subpages_list {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 1);
     height: 500px;
     width: 200px;
     position: absolute;
@@ -183,74 +183,72 @@ li a:hover {
 
 #grid_wrapper_exp {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 400px 400px 400px 400px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "na na"
-    "pic1 txt1"
-    "pic2 txt2"
-    "pic3 txt3"
-    "pic4 txt4";
+    "na"
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "c5"
+    "c6"
+    "c7"
+    "c8"
+    "fo";
 }
 
-
-#test_picture {
-    margin: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-
-}
-
-#pic_exp1 {
-    grid-area: pic1;
+#vct_gc {
+    grid-area: c1;
     background-color: black;
     border: 1px solid white;
 }
 
-#pic_exp2 {
-    grid-area: pic2;
+#zeal_project {
+    grid-area: c2;
     background-color: black;
     border: 1px solid white;
 }
 
-#pic_exp3 {
-    grid-area: pic3;
+#stena {
+    grid-area: c3;
     background-color: black;
     border: 1px solid white;
 }
 
-#pic_exp4 {
-    grid-area: pic4;
+#ungdom {
+    grid-area: c4;
     background-color: black;
     border: 1px solid white;
 }
 
-#text_exp1 {
-    grid-area: txt1;
+#html_css_kod{
+    grid-area: c5;
     background-color: black;
     border: 1px solid white;
 }
 
-#text_exp2 {
-    grid-area: txt2;
+#ruby{
+    grid-area: c6;
     background-color: black;
     border: 1px solid white;
 }
 
-#text_exp3 {
-    grid-area: txt3;
+#lua {
+    grid-area: c7;
     background-color: black;
     border: 1px solid white;
 }
 
-#text_exp4 {
-    grid-area: txt4;
+#aimlab {
+    grid-area: c8;
     background-color: black;
     border: 1px solid white;
 }
 
+.card_container {
+    padding: 2px 16px;
+  }
 
 /* Datorns hemsida senare */
 @media screen and (min-width: 700px) {
@@ -261,14 +259,13 @@ li a:hover {
 
     #grid_wrapper_exp {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 400px 400px 400px 400px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr 100px;
         grid-template-areas: 
-        "na na"
-        "pic1 txt1"
-        "pic2 txt2"
-        "pic3 txt3"
-        "pic4 txt4";
+        "na na na na"
+        "c1 c2 c3 c4"
+        "c5 c6 c7 c8"
+        "fo fo fo fo";
     }
 
     #subpages_list {
