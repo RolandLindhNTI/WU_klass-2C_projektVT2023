@@ -40,7 +40,7 @@ p {
 
 
 #subpages_list {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(20, 20, 20, 1);
     height: 500px;
     width: 200px;
     position: absolute;
@@ -89,7 +89,7 @@ p {
 
 main {
     grid-area: ma;
-    background: black;
+    background: rgb(20,20,20);
     border: 1px solid white;
     text-align: center;
     padding: 10px;
@@ -97,7 +97,7 @@ main {
 
 #main2 {
     grid-area: m2;
-    background: black;
+    background: rgb(20,20,20);
     border: 1px solid white;
     text-align: center;
     padding: 10px;
@@ -105,20 +105,20 @@ main {
 
 #picture1 {
     grid-area: p1;
-    background: black;
+    background: rgb(20,20,20);
     border: 1px solid white;
 
 }
 
 #picture2 {
     grid-area: p2;
-    background: black;
+    background: rgb(20,20,20);
     border: 1px solid white;
 }
 
 footer {
     grid-area: fo;
-    background-color: black;
+    background-color: rgb(20,20,20);
     text-align: center;
     border: 1px solid white;
 }
@@ -127,7 +127,7 @@ nav  {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(20,20,20);
     grid-area: na;
     border-radius: 5px;
     border: 1px solid white;
@@ -200,55 +200,59 @@ li a:hover {
 
 #vct_gc {
     grid-area: c1;
-    background-color: black;
+    background-color: rgb(20,20,20);
     border: 1px solid white;
 }
 
 #zeal_project {
     grid-area: c2;
-    background-color: black;
+    background-color:rgb(20,20,20);
     border: 1px solid white;
 }
 
 #stena {
     grid-area: c3;
-    background-color: black;
+    background-color: rgb(20,20,20);
     border: 1px solid white;
 }
 
 #ungdom {
     grid-area: c4;
-    background-color: black;
+    background-color: rgb(20,20,20);
     border: 1px solid white;
 }
 
 #html_css_kod{
     grid-area: c5;
-    background-color: black;
+    background-color: rgb(20,20,20);
     border: 1px solid white;
 }
 
 #ruby{
     grid-area: c6;
-    background-color: black;
+    background-color: rgb(20,20,20);
     border: 1px solid white;
 }
 
 #lua {
     grid-area: c7;
-    background-color: black;
+    background-color: rgb(20,20,20);
     border: 1px solid white;
 }
 
 #aimlab {
     grid-area: c8;
-    background-color: black;
+    background-color: rgb(20,20,20);
     border: 1px solid white;
 }
 
 .card_container {
     padding: 2px 16px;
   }
+
+.pictures {
+    margin-left: 15%;
+}
 
 /* Datorns hemsida senare */
 @media screen and (min-width: 700px) {
