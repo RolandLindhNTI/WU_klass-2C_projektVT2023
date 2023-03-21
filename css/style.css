@@ -285,3 +285,109 @@ li a:hover {
         
     }
 }
+/* End of Experience*/
+/* Start of About me */
+
+.information {
+    background-color: rgb(20,20,20);
+    border: 1px solid white;
+    height: 801px;
+}
+
+#page1 {
+    grid-area: ar1;
+}
+
+#page2 {
+    grid-area: ar2;
+}
+
+#grid_wrapper_aboutme {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "na na"
+    "ar1 ar2"
+    "fo fo";
+}
+
+@media screen and (min-width: 700px) {
+
+    #menu {
+        display: none;
+    }
+
+    #grid_wrapper_aboutme {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas:
+        "na na" 
+        "ar1 ar2"
+        "fo fo";
+    }
+
+    #subpages_list {
+        height: 100px;
+        width: 100%;
+        top: 0px;
+        flex-direction: row;
+        transition: none;
+    }
+
+    .subpages_list_visible {
+        transform: translateY(0px);
+        
+    }
+}
+
+/* End of About me*/
+/* Start of "Holder" */
+
+
+#holdermain {
+    background-color: rgb(20,20,20);
+    grid-area: hm;
+    height: 1000px;
+}
+
+#grid_wrapper_holder {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "na"
+    "hm"
+    "fo";
+}
+
+@media screen and (min-width: 700px) {
+
+    #menu {
+        display: none;
+    }
+
+    #grid_wrapper_holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas:
+        "na" 
+        "hm"
+        "fo";
+    }
+
+    #subpages_list {
+        height: 100px;
+        width: 100%;
+        top: 0px;
+        flex-direction: row;
+        transition: none;
+    }
+
+    .subpages_list_visible {
+        transform: translateY(0px);
+        
+    }
+}
