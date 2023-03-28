@@ -16,6 +16,10 @@ h1 {
     letter-spacing: 5px;
 }
 
+#home_text {
+    padding-top: 10px;
+}
+
 p {
     color: rgb(255, 255, 255);
     font-family: 'Dev Gothic', sans-serif;
@@ -119,8 +123,12 @@ main {
 footer {
     grid-area: fo;
     background-color: rgb(20,20,20);
-    text-align: center;
     border: 1px solid white;
+    text-align: center;
+}
+
+.footer_header {
+    text-align: center;
 }
 
 nav  {
@@ -184,7 +192,7 @@ li a:hover {
 #grid_wrapper_exp {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 100px;
     grid-template-areas: 
     "na"
     "c1"
@@ -296,10 +304,22 @@ li a:hover {
 
 #page1 {
     grid-area: ar1;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 #page2 {
     grid-area: ar2;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.about_me_text {
+    padding-left: 20px;
+}
+
+.about_me_h2 {
+    padding-top: 15px;
 }
 
 #grid_wrapper_aboutme {
