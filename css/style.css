@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Dev Gothic', sans-serif;
     color: white;
+    background: rgb(20,20,20);
 }
 
 
@@ -16,8 +17,14 @@ h1 {
     letter-spacing: 5px;
 }
 
-#home_text {
+#home_text1 {
     padding-top: 10px;
+    font-size: 2.2vw;
+}
+
+#home_text2 {
+    padding-top: 10px;
+    font-size:3vw;
 }
 
 p {
@@ -49,7 +56,6 @@ p {
     width: 200px;
     position: absolute;
     top: -500px;
-    right: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +117,6 @@ main {
     grid-area: p1;
     background: rgb(20,20,20);
     border: 1px solid white;
-
 }
 
 #picture2 {
@@ -120,11 +125,26 @@ main {
     border: 1px solid white;
 }
 
+#home_p1 {
+    height: 50vh;
+    width: 40vh;
+}
+
+#home_p2 {
+    height: 50vh;
+    width: 40vh;
+}
+
+
+
+
 footer {
     grid-area: fo;
     background-color: rgb(20,20,20);
     border: 1px solid white;
     text-align: center;
+    height: 40vh;
+    padding: 25%;
 }
 
 .footer_header {
@@ -178,12 +198,37 @@ li a:hover {
         top: 0px;
         flex-direction: row;
         transition: none;
+        
     }
 
     .subpages_list_visible {
         transform: translateY(0px);
-        
     }
+
+
+    #home_text1 {
+        font-size:1.2vw;
+    }
+
+    #home_text2 {
+        font-size:1.2vw;
+    }
+
+    #home_p1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    #home_p2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    footer {
+        height: 100vh;
+    }
+
+
 }
 
 /* End of Index */
@@ -204,6 +249,10 @@ li a:hover {
     "c7"
     "c8"
     "fo";
+}
+
+#experience_h1 {
+    letter-spacing: 0;
 }
 
 #vct_gc {
@@ -284,13 +333,18 @@ li a:hover {
         height: 100px;
         width: 100%;
         top: 0px;
+        right: 0px;
         flex-direction: row;
         transition: none;
     }
 
     .subpages_list_visible {
         transform: translateY(0px);
-        
+    }
+
+    footer {
+        height: 11vh;
+        padding: 0%;
     }
 }
 /* End of Experience*/
@@ -312,6 +366,7 @@ li a:hover {
     grid-area: ar2;
     padding-left: 20px;
     padding-top: 20px;
+    font-size: 14px;
 }
 
 .about_me_text {
@@ -325,7 +380,7 @@ li a:hover {
 #grid_wrapper_aboutme {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-rows: 100px 1fr 150px;
     grid-template-areas: 
     "na na"
     "ar1 ar2"
@@ -360,17 +415,28 @@ li a:hover {
         transform: translateY(0px);
         
     }
+
+    #page2 {
+        font-size: large;
+    }
 }
 
 /* End of About me*/
 /* Start of "Holder" */
 
 
-#holdermain {
+#projectsmain {
     background-color: rgb(20,20,20);
     grid-area: hm;
     height: 1000px;
+    outline: 1px solid white;
 }
+
+#project_thumbnail {
+    height: 360px;
+    width: 560px;
+}
+
 
 #grid_wrapper_holder {
     display: grid;
