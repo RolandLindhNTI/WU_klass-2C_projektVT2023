@@ -435,6 +435,7 @@ li a:hover {
 #project_thumbnail {
     height: 360px;
     width: 560px;
+    border: 1px solid white;
 }
 
 
