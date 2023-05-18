@@ -1,0 +1,23 @@
+PROBLEM!!!!!!!!!!!!!
+
+Sidorna kan utvecklas vad gäller innehåll. Framförallt sidan projects, men även de andra sidorna.
+
+Utförligare ändring av layout för mobil och desktop kan visas.
+
+Bildernas höjd och bredd får fel förhållande beroende på fönstrets bredd.
+
+Sidorna kan utvecklas mer vad gäller layout av bild och framförallt text.
+
+Ta upp i dokumentationen hur bild och text har anpassats, med koppling till teori från kursen.
+
+En del problem i den mobila layouten. Sidan är för inzoomad från startläget.
+
+En del problem i den mobila layouten. Sidan är för inzoomad från startläget.
+
+En del problem i den mobila layouten. Sidan är för inzoomad från startläget. 
+
+
+
+FIXADE PROBLEM
+Felet från html-valideringen behöver åtgärdas. Fråga mig gärna om detta.  (FIXAT)
+Se över filnamn vad gäller versaler. (FIXAT)
