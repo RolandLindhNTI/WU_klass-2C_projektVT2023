@@ -9,8 +9,6 @@
     background: rgb(20,20,20);
 }
 
-
-
 /* Index */
 h1 {
     font-family: 'Dev Gothic', sans-serif;
@@ -20,12 +18,12 @@ h1 {
 
 #home_text1 {
     padding-top: 10px;
-    font-size: 2.2vw;
+    font-size: 1rem;
 }
 
 #home_text2 {
     padding-top: 10px;
-    font-size:3vw;
+    font-size: 1rem;
 }
 
 p {
@@ -90,10 +88,10 @@ p {
 #grid_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 400px 400px 100px;
+    grid-template-rows: 100px 1fr 1fr 100px;
     grid-template-areas: 
     "na na"
-    "p1 ma"
+    "ma ma"
     "p2 m2"
     "fo fo";
 }
@@ -112,31 +110,35 @@ main {
     border: 1px solid white;
     text-align: center;
     padding: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
-#picture1 {
-    grid-area: p1;
-    background: rgb(20,20,20);
-    border: 1px solid white;
-}
 
 #picture2 {
     grid-area: p2;
     background: rgb(20,20,20);
     border: 1px solid white;
+    display: flex;
+    max-width: 100%;
+    height: auto;
 }
 
 #home_p1 {
-    height: 50vh;
-    width: 40vh;
+    max-width: 100%;
+    height: fit-content;
+    display: none;
 }
 
 #home_p2 {
-    height: 50vh;
-    width: 40vh;
+    max-width: 100%;
+    height: auto;
 }
 
-
+#home_h1 {
+    font-size: 2.2rem;
+    overflow-wrap: break-word;
+}
 
 
 footer {
@@ -144,8 +146,8 @@ footer {
     background-color: rgb(20,20,20);
     border: 1px solid white;
     text-align: center;
-    height: 40vh;
-    padding: 25%;
+    height: 20rem;
+    padding-top: 25%;
 }
 
 .footer_header {
@@ -184,8 +186,9 @@ li a:hover {
     }
 
     #grid_wrapper {
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 400px 400px 100px;
+        grid-template-rows: 100px 1fr 1fr 100px;
         grid-template-areas: 
         "na na"
         "p1 ma"
@@ -208,29 +211,67 @@ li a:hover {
 
 
     #home_text1 {
-        font-size:1.2vw;
+        font-size:1.25rem;
     }
 
     #home_text2 {
-        font-size:1.2vw;
+        font-size:1.25rem;
         text-align: center;
     }
 
     #home_p1 {
-        height: 100%;
-        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        
     }
 
+    #index_footer {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
     #home_p2 {
-        height: 100%;
-        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
-    footer {
-        height: 100vh;
+    #picture1 {
+        grid-area: p1;
+        background: rgb(20,20,20);
+        border: 1px solid white;
+        max-width: 100%;
+        height: auto;
+        display: flex;
     }
 
+    #picture2 {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
 
+    #home_h1 {
+        font-size: 2.2rem;
+        overflow-wrap: break-word;
+    }
+
+    main {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #index_div {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* End of Index */
@@ -356,20 +397,23 @@ li a:hover {
 .information {
     background-color: rgb(20,20,20);
     border: 1px solid white;
-    height: 801px;
+    height: auto;
+    overflow-wrap: break-word;
 }
 
 #page1 {
-    grid-area: ar1;
+    grid-area: ab1;
     padding-left: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #page2 {
-    grid-area: ar2;
+    grid-area: ab2;
     padding-left: 20px;
     padding-top: 20px;
-    font-size: 14px;
+    font-size: 18px; 
+
 }
 
 .about_me_text {
@@ -382,12 +426,51 @@ li a:hover {
 
 #grid_wrapper_aboutme {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr minmax(400px, auto) minmax(400px, auto) 150px;
     grid-template-areas: 
-    "na na"
-    "ar1 ar2"
-    "fo fo";
+    "na na na na"
+    "ab1 ab1 ab2 ab2"
+    "ab3 ab3 ab5 ab5"
+    "ab4 ab4 ab4 ab4"
+    "fo fo fo fo";
+}
+
+#listdecoration {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.listpadding {
+    padding-left: 20px;
+}
+
+#page3 {
+    grid-area: ab3;
+    border: 1px solid white;
+    background-color: rgb(20,20,20);
+    padding-left: 20px;
+    
+}
+
+#moonpicture {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#page4 {
+    grid-area: ab4;
+    border: 1px solid white;
+    background-color: rgb(20,20,20);
+    
+}
+
+#page5 {
+    grid-area: ab5;
+    border: 1px solid white;
+    background-color: rgb(20,20,20);
+    padding-left: 20px;
 }
 
 @media screen and (min-width: 700px) {
@@ -398,12 +481,13 @@ li a:hover {
 
     #grid_wrapper_aboutme {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 1fr 100px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 100px 1fr 1fr 100px;
         grid-template-areas:
-        "na na" 
-        "ar1 ar2"
-        "fo fo";
+        "na na na na na na" 
+        "ab1 ab1 ab1 ab2 ab2 ab2"
+        "ab3 ab3 ab4 ab4 ab5 ab5"
+        "fo fo fo fo fo fo";
     }
 
     #subpages_list {
@@ -420,37 +504,158 @@ li a:hover {
     }
 
     #page2 {
-        font-size: large;
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        overflow: auto;
+    }
+
+    #page3 {
+
+    }
+
+    #page4 {
+        display: flex;
+    }
+
+    #page5 {
+
     }
 }
 
 /* End of About me*/
 /* Start of "Holder" */
 
-
-#projectsmain {
-    background-color: rgb(20,20,20);
-    grid-area: hm;
-    height: 1000px;
-    outline: 1px solid white;
-}
-
-#project_thumbnail {
-    height: 360px;
-    width: 560px;
-    border: 1px solid white;
-}
-
-
 #grid_wrapper_holder {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-rows: 100px 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 1fr 100px;
+    grid-row-gap: 20px;
     grid-template-areas: 
     "na"
-    "hm"
+    "pos1"
+    "pos2"
+    "pos3"
+    "pos4"
+    "pos5"
+    "pos6"
+    "pos7"
+    "pos8"
+    "pos9"
+    "pos10"
     "fo";
 }
+
+
+#project_thumbnail {
+    background-color: rgb(20,20,20);
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 20px;
+}
+
+#projectsinformation {
+    grid-area: pos10;
+    border: 1px solid white;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    font-size:0.9rem
+}
+
+.projectsdecoration {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 6vw;
+    max-width: 100%;
+    height: auto;
+}
+
+#pos1 {
+    grid-area: pos1;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 6vw;
+    max-width: 100%;
+    height: auto;
+}
+
+#pos2 {
+    grid-area: pos2;
+    border: 1px solid white;
+    display: flex;
+}
+
+#pos3 {
+    grid-area: pos3;
+    border: 1px solid white;
+    display: flex;
+
+}
+
+#pos4 {
+    grid-area: pos4;
+    border: 1px solid white;
+    display: flex;
+
+}
+
+#pos5 {
+    grid-area: pos5;
+    border: 1px solid white;
+    display: flex;
+}
+
+#pos6 {
+    grid-area: pos6;
+    border: 1px solid white;
+    display: flex;
+
+}
+
+#pos7 {
+    grid-area: pos7;
+    border: 1px solid white;
+    display: flex;
+
+}
+
+#pos8 {
+    grid-area: pos8;
+    border: 1px solid white;
+    display: flex;
+
+}
+
+#pos9 {
+    grid-area: pos9;
+    border: 1px solid white;
+    display: flex;
+
+}
+
+
 
 @media screen and (min-width: 700px) {
 
@@ -460,12 +665,15 @@ li a:hover {
 
     #grid_wrapper_holder {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 1fr 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 0.1fr 0.1fr 0.1fr 0.1fr 100px;
         grid-template-areas:
-        "na" 
-        "hm"
-        "fo";
+        "na na na" 
+        "pos1 pos2 pos3"
+        "pos4 pos5 pos6"
+        "pos7 pos8 pos9"
+        "pos10 pos10 pos10"
+        "fo fo fo";
     }
 
     #subpages_list {
@@ -479,5 +687,61 @@ li a:hover {
     .subpages_list_visible {
         transform: translateY(0px);
         
+    }
+    
+    #pos1 {
+        grid-area: pos1;
+        border: 1px solid white;
+        border-radius: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 18px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .projectsdecoration {
+        margin-left: 40px;
+        margin-right: 40px;
+        border-radius: 0px;
+        border: 1px solid white;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 1.25rem;
+        display: flex;
+        height: auto;
+        max-width: 100%;
+    }
+
+    #projectsinformation {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        border: 1px solid white;
+        font-size: 1.25rem;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #project_thumbnail {
+        border-radius: 0px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    #projectsfooter {
+        display: flex;
+        flex-direction: column;
     }
 }

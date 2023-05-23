@@ -4,7 +4,7 @@ Sidorna kan utvecklas vad gäller innehåll. Framförallt sidan projects, men ä
 
 Utförligare ändring av layout för mobil och desktop kan visas.
 
-Bildernas höjd och bredd får fel förhållande beroende på fönstrets bredd.
+Bildernas höjd och bredd får fel förhållande beroende på fönstrets bredd. (på börjat)
 
 Sidorna kan utvecklas mer vad gäller layout av bild och framförallt text.
 
